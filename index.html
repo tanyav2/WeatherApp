@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Weather</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+  <script src="action.js"></script>
+  <script src="http://openlayers.org/api/OpenLayers.js"></script>
+
+  </head>
+  <body>
+    <div id = "showWeather">Weather</div>
+
+    <div id="floating-panel">
+      <input id="address" type="textbox">
+      <input id="submit" type="button" value="Enter Zipcode" onclick="getWeather()">
+    </div>
+    <div id="map"></div>
+    <!-- <script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXC3xeNZjXhtlhuk7WshWOQ9-72NbHmxU&libraries=visualization">
+</script> -->
+<div id="google-map-overlay"></div>
+<div id ="google-map-overlay-conditions"></div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXC3xeNZjXhtlhuk7WshWOQ9-72NbHmxU&callback=initMap">
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js">
+</script>
+  </body>
+</html>
